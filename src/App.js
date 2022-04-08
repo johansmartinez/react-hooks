@@ -1,8 +1,11 @@
+import { Header } from "./components/Header";
+import { Characters } from "./components/Characters";
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
-      hola
+      <Header/>
+      <Characters/>
     </div>
   );
 }
