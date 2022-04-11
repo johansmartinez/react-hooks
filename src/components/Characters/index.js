@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import {CharacterData} from './CharacterData';
+import { initialState } from './reducerFavorites';
 
 const Characters =()=>{
     const [characters, setCharacters] = useState([])
@@ -14,6 +15,7 @@ const Characters =()=>{
     
     return (
         <div>
+            <p> Favoritos: {initialState.favorites.length}</p>
             {characters.map((element,i)=>(
                 <CharacterData key={`character${i}`} info={element}/>
             ))}
